@@ -1,7 +1,11 @@
-Thing mqtt:topic:mosquitto:ledlight "MQTT Thing: Led matrix" (mqtt:broker:mosquitto) @ "Home" {
+Thing mqtt:topic:mosquitto:ledlight "MQTT Thing: Led Status Matrix" (mqtt:broker:mosquitto) @ "Home" {
   Channels:
-    Type string : led_color "Led_Color" 
+    Type string : status_led_color_mervi "Mervi Status Color" 
     [
-      commandTopic="home/ledmatrix"
+      commandTopic="home/status_led_matrix/mervi"
+    ]
+    Type string : status_led_color_ville "Ville Status Color" 
+    [
+      commandTopic="home/status_led_matrix/ville"
     ]
 }

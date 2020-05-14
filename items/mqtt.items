@@ -1,4 +1,7 @@
 Group gHome "Home"
 
-Color RGBMatrix "Matrix Color" (gHome)
-String RGBMatrixColor "Matrix Color String" (gHome) {channel="mqtt:topic:mosquitto:ledlight:led_color"}
+Color merviLedColor "Mervi Status Color" (gHome)
+String merviLedColorString "Mervi Status Color String" (gHome) {channel="mqtt:topic:mosquitto:ledlight:status_led_color_mervi"}
+
+Color villeLedColor "Ville Status Color" (gHome)
+String villeLedColorString "Ville Status Color String" (gHome) {channel="mqtt:topic:mosquitto:ledlight:status_led_color_ville"}
