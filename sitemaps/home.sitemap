@@ -1,0 +1,6 @@
+sitemap home label="Home"
+{
+	Frame label="Led Matrix" {
+		Colorpicker item=RGBMatrix icon="slider"
+	}
+}

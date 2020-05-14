@@ -1,0 +1,15 @@
+import org.openhab.core.library.types.*
+
+rule "Set RGB matrix value"
+when
+	Item RGBMatrix changed
+then
+	val hsbVal = RGBMatrix.state as HSBType
+	val brigh = hsbVal.brightness.intValue
+	val redVal = ((((hsbVal.red.intValue * 255) / 100) * brigh) / 100).toString
+	val greenVal = ((((hsbVal.green.intValue * 255) / 100) * brigh) / 100).toString
+	val blueVal = ((((hsbVal.blue.intValue * 255) / 100) *brigh) / 100).toString
+
+	val color = redVal + "," + greenVal + "," + blueVal
+	sendCommand(RGBMatrixColor, color)
+end

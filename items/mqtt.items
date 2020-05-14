@@ -1,0 +1,4 @@
+Group gHome "Home"
+
+Color RGBMatrix "Matrix Color" (gHome)
+String RGBMatrixColor "Matrix Color String" (gHome) {channel="mqtt:topic:mosquitto:ledlight:led_color"}

@@ -1,0 +1,2 @@
+Bridge mqtt:broker:mosquitto [ host="127.0.0.1", port="1883", secure=false, username="openhabian", password="azerbaistan" ] {
+}
