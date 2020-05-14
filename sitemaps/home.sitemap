@@ -1,6 +1,7 @@
 sitemap home label="Home"
 {
-	Frame label="Led Matrix" {
-		Colorpicker item=RGBMatrix icon="slider"
+	Frame label="Status Leds" {
+		Colorpicker item=merviLedColor icon="slider"
+		Colorpicker item=villeLedColor icon="slider"
 	}
 }
